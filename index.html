@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APCS 刷題紀錄器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="hero">
+            <h1>APCS 刷題紀錄器</h1>
+            <p class="subtitle">記錄你的 C++ 解題歷程與突破</p>
+        </header>
+
+        <div class="card">
+            <div class="form-group">
+                <label for="questionId">題目編號 (請輸入 1~100 測試)：</label>
+                <div class="input-row">
+                    <input type="number" id="questionId" placeholder="例如：1">
+                    <button id="fetchApiBtn" class="btn-secondary">自動填入題目資訊</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="questionTitle">題目名稱：</label>
+                <input type="text" id="questionTitle" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="difficulty">難度評估：</label>
+                <select id="difficulty">
+                    <option value="簡單">簡單</option>
+                    <option value="中等">中等</option>
+                    <option value="困難">困難</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">解題心得與思路：</label>
+                <textarea id="notes" rows="4" placeholder="記錄這題用到了哪些演算法..."></textarea>
+            </div>
+
+            <button id="submitBtn" class="btn-primary">儲存紀錄至雲端</button>
+            <p id="statusMsg"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

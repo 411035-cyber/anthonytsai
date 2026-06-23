@@ -1,0 +1,125 @@
+
+
+
+
+
+
+
+
+
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --accent-color: #bb86fc;
+    --border-color: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 24px;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.hero p {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c2c2c;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[readonly] {
+    background-color: #222;
+    color: #888;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: var(--accent-color);
+    color: #000;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #9d4edd;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+}
+
+#statusMsg {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4caf50;
+}
+
+
